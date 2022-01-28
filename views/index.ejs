@@ -1,0 +1,36 @@
+<!-- include header -->
+<%- include('common/_header') %>
+<!-- /include header -->
+
+
+     <!-- Main Site -->
+     <main id="site-main">
+        <div class="container">
+           
+
+            <!-- form handling -->
+            <form action="/" method="POST">
+                <table class="display table" id="myTable">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>ID</th>
+                            <th>Item</th>
+                            <th>Price (£)</th>
+                            <th>Shop</th>
+                            <th>Quantity</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                          <%- include('common/_show') %>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </main>
+    <!-- /Main Site -->
+
+
+<!-- include footer -->
+<%- include('common/_footer') %>
+<!-- /include footer -->

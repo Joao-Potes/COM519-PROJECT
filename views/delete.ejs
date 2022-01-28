@@ -1,0 +1,23 @@
+<main id="site-main">
+    <body>
+
+        
+        <form class = "container" method = "post" action = "/delete_item" id="update-item">
+            <h2 class="text-dark">Delete item</h2>
+            <div class="new_item">
+                <div class = "form-group">
+                    <div class = "form-group">
+                        <label for="item_name"> Delete item:</label>
+                        <select name="item_name">
+                        <% for(var i = 0; i < items_list.length; i++) { %>
+                        <option value="<%= items_list[i].item_name %>"><%= items_list[i].item_name %></option>
+                        <%}%>
+                        </select>
+                    </div>
+                </div>
+            </div>    
+            <button>Delete </button>
+        </form>
+    
+    </body>
+</main>

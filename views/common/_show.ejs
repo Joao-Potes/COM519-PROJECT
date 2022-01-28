@@ -1,0 +1,19 @@
+<% for(var i = 0; i < items_list.length; i++) { %>
+
+    <tr>
+        <td><%= i + 1 %></td>
+        <td><%= items_list[i].item_name %></td>
+        <td><%= items_list[i].item_price %></td>
+        <td><%= items_list[i].shop %></td>
+        <td><%= items_list[i].quantity%></td>
+        <td>
+            <a href="/update-item?id=<%=items_list[i]._id%>" class="btn border-shadow update">
+                <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+            </a>
+    
+            <a id="deleteIcon" class="btn border-shadow delete" data-id=<%=items_list[i]._id%>>
+                <span class="text-gradient"><i class="fas fa-times"></i></span>
+            </a>
+        </td>
+    </tr>
+    <% } %>
